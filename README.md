@@ -10,10 +10,10 @@ Tidak ada backend. API key kamu dikirim langsung dari browser ke Google, tidak d
 2. Tempel ke kolom input. Struktur diurai jadi pohon yang bisa dirapikan (hapus folder yang tidak perlu, misalnya `dist` atau `.next`, agar hasil lebih fokus).
 3. Masukkan API key Gemini ([Google AI Studio](https://aistudio.google.com/apikey)).
 4. Tekan analisis. Hasilnya empat bagian:
-   - **Ringkasan** — nama proyek, framework, bahasa, jenis arsitektur (Monolith, Microservices, Serverless, SPA, MVC).
-   - **Peran berkas** — tiap path diberi label Config, UI, Logic, Data, Utils, Test, Assets, atau Entry, beserta penjelasannya.
-   - **Saran perbaikan** — kategori Refactor, Security, Performance, atau Best Practice, dengan tingkat dampak.
-   - **Draf README** — siap disalin.
+ - **Ringkasan** — nama proyek, framework, bahasa, jenis arsitektur (Monolith, Microservices, Serverless, SPA, MVC).
+ - **Peran berkas** — tiap path diberi label Config, UI, Logic, Data, Utils, Test, Assets, atau Entry, beserta penjelasannya.
+ - **Saran perbaikan** — kategori Refactor, Security, Performance, atau Best Practice, dengan tingkat dampak.
+ - **Draf README** — siap disalin.
 
 ## Menjalankan
 
@@ -38,3 +38,11 @@ src/components/          Tampilan bersama
 - Yang dianalisis hanya **nama dan susunan berkas**, isi berkas tidak ikut dikirim. Karena itu penjelasan per berkas bersifat dugaan berdasarkan nama; berkas dengan nama generik seperti `utils.ts` bisa salah tebak.
 - Struktur yang terlalu dalam atau terlalu banyak berkas memperbesar penggunaan token dan biaya. Batasi dengan `-L`.
 - Output divalidasi Zod. Kalau model mengembalikan bentuk yang tidak sesuai, permintaan diulang, bukan ditampilkan setengah jadi.
+
+---
+
+## English
+
+**ai-project-scanner** takes a pasted folder tree and asks Gemini to explain the project: which framework it uses, what each file is for, which parts need work, and a draft README.
+
+There is no backend — the API key goes straight from the browser to Google and is never stored.
