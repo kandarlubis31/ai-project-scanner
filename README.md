@@ -10,10 +10,10 @@ Tidak ada backend. API key kamu dikirim langsung dari browser ke Google, tidak d
 2. Tempel ke kolom input. Struktur diurai jadi pohon yang bisa dirapikan (hapus folder yang tidak perlu, misalnya `dist` atau `.next`, agar hasil lebih fokus).
 3. Masukkan API key Gemini ([Google AI Studio](https://aistudio.google.com/apikey)).
 4. Tekan analisis. Hasilnya empat bagian:
- - **Ringkasan** — nama proyek, framework, bahasa, jenis arsitektur (Monolith, Microservices, Serverless, SPA, MVC).
- - **Peran berkas** — tiap path diberi label Config, UI, Logic, Data, Utils, Test, Assets, atau Entry, beserta penjelasannya.
- - **Saran perbaikan** — kategori Refactor, Security, Performance, atau Best Practice, dengan tingkat dampak.
- - **Draf README** — siap disalin.
+   - **Ringkasan** — nama proyek, framework, bahasa, jenis arsitektur (Monolith, Microservices, Serverless, SPA, MVC).
+   - **Peran berkas** — tiap path diberi label Config, UI, Logic, Data, Utils, Test, Assets, atau Entry, beserta penjelasannya.
+   - **Saran perbaikan** — kategori Refactor, Security, Performance, atau Best Practice, dengan tingkat dampak.
+   - **Draf README** — siap disalin.
 
 ## Menjalankan
 
