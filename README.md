@@ -38,3 +38,11 @@ src/components/          Tampilan bersama
 - Yang dianalisis hanya **nama dan susunan berkas**, isi berkas tidak ikut dikirim. Karena itu penjelasan per berkas bersifat dugaan berdasarkan nama; berkas dengan nama generik seperti `utils.ts` bisa salah tebak.
 - Struktur yang terlalu dalam atau terlalu banyak berkas memperbesar penggunaan token dan biaya. Batasi dengan `-L`.
 - Output divalidasi Zod. Kalau model mengembalikan bentuk yang tidak sesuai, permintaan diulang, bukan ditampilkan setengah jadi.
+
+---
+
+## English
+
+**ai-project-scanner** takes a pasted folder tree and asks Gemini to explain the project: which framework it uses, what each file is for, which parts need work, and a draft README.
+
+There is no backend — the API key goes straight from the browser to Google and is never stored.
